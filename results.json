@@ -1,0 +1,82 @@
+{
+  "organization": "fastify",
+  "summary": {
+    "repositories": 5,
+    "analyzed": 4,
+    "failed": 0,
+    "unsupported": 1,
+    "findings": 3
+  },
+  "repositories": [
+    {
+      "name": "avvio",
+      "url": "https://github.com/fastify/avvio",
+      "status": "analyzed",
+      "error_reason": null,
+      "languages": [
+        "javascript"
+      ],
+      "findings": []
+    },
+    {
+      "name": "fast-json-stringify",
+      "url": "https://github.com/fastify/fast-json-stringify",
+      "status": "analyzed",
+      "error_reason": null,
+      "languages": [
+        "javascript"
+      ],
+      "findings": []
+    },
+    {
+      "name": "fastify",
+      "url": "https://github.com/fastify/fastify",
+      "status": "analyzed",
+      "error_reason": null,
+      "languages": [
+        "javascript"
+      ],
+      "findings": []
+    },
+    {
+      "name": "fastify-cli",
+      "url": "https://github.com/fastify/fastify-cli",
+      "status": "analyzed",
+      "error_reason": null,
+      "languages": [
+        "javascript"
+      ],
+      "findings": [
+        {
+          "rule_id": "js/shell-command-injection-from-environment",
+          "severity": "warning",
+          "message": "This shell command depends on an uncontrolled [absolute path](1).",
+          "file": "test/cli.test.js",
+          "start_line": 16
+        },
+        {
+          "rule_id": "js/shell-command-injection-from-environment",
+          "severity": "warning",
+          "message": "This shell command depends on an uncontrolled [absolute path](1).",
+          "file": "test/generate-esm.test.js",
+          "start_line": 145
+        },
+        {
+          "rule_id": "js/shell-command-injection-from-environment",
+          "severity": "warning",
+          "message": "This shell command depends on an uncontrolled [absolute path](1).",
+          "file": "test/generate.test.js",
+          "start_line": 140
+        }
+      ]
+    },
+    {
+      "name": "graphics",
+      "url": "https://github.com/fastify/graphics",
+      "status": "unsupported",
+      "error_reason": "Sin lenguajes soportados por CodeQL",
+      "languages": [],
+      "findings": []
+    }
+  ]
+}
