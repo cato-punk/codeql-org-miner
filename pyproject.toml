@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeql-org-miner"
+version = "0.1.0"
+description = "Herramienta CLI para automatizar el análisis estático de vulnerabilidades con CodeQL en organizaciones de GitHub."
+authors = [{ name = "Tu Nombre" }]
+dependencies = [
+    "typer>=0.9.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "rich>=13.0.0"
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.scripts]
+miner = "miner.cli:app"

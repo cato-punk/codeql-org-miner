@@ -1,0 +1,14 @@
+# Entorno virtual y temporales de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Archivos de trabajo temporales del miner
+workspace/
+temp_sarif/
+*.json
+!.env.example
+
+# Credenciales
+.env
